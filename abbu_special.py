@@ -1,19 +1,16 @@
 import streamlit as st
 
-# Page Configuration
-st.set_page_config(page_title="For My Best Abbu - Radzaq", page_icon="👑")
+st.set_page_config(page_title="For My Best Abbu - Razzaq", page_icon="👑")
 
 st.title("🌟 Dedicating to the World's Best Father 🌟")
-st.write("Welcome! This special interactive space is created with pure love, respect, and coding magic by your proud daughter, Rabia.")
+st.write("Welcome my dear father! This special interactive space is created with pure love, respect, and coding magic by your proud daughter, Rabiya.")
 
-# User Name Input Section
 st.markdown("---")
 user_name = st.text_input("🔐 Enter the sacred name (RADZAQ / Razjak) to unlock this secret tribute:")
 
 if user_name:
-    # Strict check for the exact names requested by Rabia
     cleaned_name = user_name.strip().lower()
-    allowed_names = ["radzaq", "razjak", "rajjak", "razjak khan", "rajjak samiulla khan"]
+    allowed_names = ["razzaq", "razjak", "rajjak", "razjak khan", "razzaq samiulla khan"]
     
     if cleaned_name in allowed_names:
         st.success("🎉 Access Granted! Welcome to your special zone, My Super-Hero Abbu! 👑")
